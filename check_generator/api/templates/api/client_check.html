@@ -1,0 +1,27 @@
+{% extends 'api/kitchen_check.html' %}
+
+{% block title %}Чек для клиента{% endblock %}
+
+{% block style %}
+<style>
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+    body {
+        width: 210mm;
+        font-size: 14px;
+        height: 297mm;
+    }
+</style>
+{% endblock %}
+
+{% block client %}
+<h3 class="col col-6">{{ order.address }}</h3>
+<div class="col col-3">
+    <ul class="list-unstyled">
+        <li class="font-weight-bold">{{ order.client.name }}</li>
+        <li>{{ order.client.phone }}</li>
+    </ul>
+</div>
+{% endblock %}

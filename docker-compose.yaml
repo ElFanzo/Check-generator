@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_DB="${POSTGRES_DB}"
+      - POSTGRES_USER="${POSTGRES_USER}"
+      - POSTGRES_PASSWORD="${POSTGRES_PASSWORD}"
+    volumes:
+      - /home/VOLUMES/postgres_data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT}:5432"
+  redis:
+    image: redis
+    volumes:
+      - /home/VOLUMES/redis_data:/data
+    ports:
+      - "${REDIS_PORT}:6379"
+  htmltopdf:
+    image: openlabs/docker-wkhtmltopdf-aas
+    ports:
+      - "${WKHTMLTOPDF_PORT}:80"

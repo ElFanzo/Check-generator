@@ -1,0 +1,14 @@
+# python cache
+*.pyc
+
+# IDE files
+.idea/
+
+# virtual environment
+env/
+
+# environment variables
+.env
+
+# flake8 config
+.flake8
