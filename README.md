@@ -2,7 +2,7 @@
 
 ## About
 
-Here is my solution of Smena company [assignment](https://github.com/smenateam/assignments/tree/master/backend) for Python backend developer.
+Here is my solution of Smena company [test assignment](https://github.com/smenateam/assignments/tree/master/backend) for Python backend developer.
 
 In short, it is a service for generating checks for customers and staff of the delivery restaurant. Follow the link above to find out more.
 
@@ -52,4 +52,4 @@ This project using [PostgreSQL v9.6](https://hub.docker.com/_/postgres/), [Redis
 
 ## API
 
-API endpoints are available in [api.yaml](api.yaml) file. It can be rendered using [Online Editor](https://editor.swagger.io/).
+API endpoints with examples of requests and responses are available in [api.yaml](api.yaml) file. It can be rendered using [Online Editor](https://editor.swagger.io/).
