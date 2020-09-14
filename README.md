@@ -36,6 +36,8 @@ This project using [PostgreSQL v9.6](https://hub.docker.com/_/postgres/), [Redis
  or set them manually
 - Run docker containers <br>
   `docker-compose up -d`
+- Change directory <br>
+  `cd check_generator`
 - Create DB <br>
   `python manage.py makemigrations` <br>
   `python manage.py migrate`
