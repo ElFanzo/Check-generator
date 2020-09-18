@@ -30,25 +30,27 @@ This project using [PostgreSQL v9.6](https://hub.docker.com/_/postgres/), [Redis
 ## Run
 
 - Activate virtual environment <br>
-  `source env/bin/activate`
+  `. env/bin/activate`
 - There are default environment variables in the [.env.example](.env.example) file. You can change them and export with <br>
-  `source .env.example` <br>
+  `. .env.example` <br>
  or set them manually
 - Run docker containers <br>
   `docker-compose up -d`
 - Change directory <br>
   `cd check_generator`
 - Create DB <br>
-  `python manage.py makemigrations` <br>
   `python manage.py migrate`
 - Create a superuser for an access to the Django admin panel <br>
   `python manage.py createsuperuser`
-- To test the service you can load fixtures for the Printer model <br>
-  `python manage.py loaddata printers.json`
 - Run RQ worker <br>
-  `python manage.py rqworker default`
+  `python manage.py rqworker`
 - Run app <br>
   `python manage.py runserver`
+
+## Test
+
+To test the service you can run the command below <br>
+`python manage.py test`
 
 ## API
 
